@@ -23,10 +23,10 @@ of what each of the values mean.
  */
 
 export const info = {
-    firstName: "John",
-    lastName: "Smith",
-    initials: "js", // the example uses first and last, but feel free to use three or more if you like.
-    position: "a Full Stack Developer",
+    firstName: "Duy",
+    lastName: "Nguyen",
+    initials: "dn", // the example uses first and last, but feel free to use three or more if you like.
+    position: "a Frontend Software Engineer",
     selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
     gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
     baseColor: colors[0],
@@ -41,11 +41,11 @@ export const info = {
         },
         {
             emoji: "💼",
-            text: "Systems Engineer at Google"
+            text: "Software Engineer at System1"
         },
         {
             emoji: "📧",
-            text: "johnsmith@gmail.com"
+            text: "duyng19@gmail.com"
         }
     ],
     socials: [
