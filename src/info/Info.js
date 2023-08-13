@@ -22,7 +22,7 @@ export const info = {
         },
         {
             emoji: '🌎',
-            text: 'based in the US'
+            text: 'based in Orange County, CA'
         },
         {
             emoji: "💼",
@@ -53,21 +53,22 @@ export const info = {
         }
     ,
     hobbies: [
+
         {
-            label: 'reading',
-            emoji: '📖'
+            label: 'badminton',
+            emoji: '🏸'
         },
         {
-            label: 'theater',
-            emoji: '🎭'
+            label: 'archery',
+            emoji: '🏹'
         },
         {
-            label: 'movies',
-            emoji: '🎥'
+            label: 'hiking',
+            emoji: '🥾'
         },
         {
-            label: 'cooking',
-            emoji: '🌶'
+            label: 'traveling',
+            emoji: '🗺'
         }
     ]
 }

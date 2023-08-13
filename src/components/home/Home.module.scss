@@ -1,30 +1,28 @@
 @import "../../variables.modules";
 
 h1 {
-  font-size: 2rem;
-  text-align: center;
-  @media only screen and (min-width: 940px) {
-    font-size: 3rem;
-    text-align: left;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 5px;
+
+  @media only screen and (min-width: 600px) {
+    font-size: 1.3rem;
   }
 }
 
 h2 {
-  font-size: 1.25rem;
-  text-align: center;
-  @media only screen and (min-width: 940px) {
-    font-size: 2rem;
-    text-align: left;
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 2rem;
+  padding-top: 1rem;
+
+  @media only screen and (min-width: 600px) {
+    font-size: 1rem;
   }
-}
 
-
-.hand {
-  animation-name: wave;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
-  transform-origin: 70% 70%;
-  display: inline-block;
+  b {
+    letter-spacing: 2px;
+  }
 }
 
 a {
@@ -37,13 +35,75 @@ a:hover {
   transition: color 200ms ease;
 }
 
-@keyframes wave {
-  0% { transform: rotate( 0.0deg) }
-  10% { transform: rotate(14.0deg) }
-  20% { transform: rotate(-8.0deg) }
-  30% { transform: rotate(14.0deg) }
-  40% { transform: rotate(-4.0deg) }
-  50% { transform: rotate(10.0deg) }
-  60% { transform: rotate( 0.0deg) }
-  100% { transform: rotate( 0.0deg) }
+.decorativeText {
+  font-family: 'Ovo', sans-serif;
+  font-size: 8rem;
+  opacity: 0.1;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+
+  @media only screen and (min-width: 600px) {
+    font-size: 12rem;
+    text-align: left;
+    left: 4rem;
+  }
+}
+
+.virgoContainer {
+  position: absolute;
+  width: 100px;
+  height: 300px;
+  right: 20%;
+  top: 15%;
+
+  .star {
+    position: absolute;
+    color: $light-bg;
+    z-index: 2;
+    opacity: 0.5;
+
+    svg {
+      width: inherit;
+      height: inherit;
+    }
+  }
+
+  .star1 {
+    width: 15px;
+    height: 25px;
+    top: -1.5%;
+    right: 0%;
+    -webkit-animation: blink-animation 2s infinite;
+    animation:         blink-animation 2s infinite;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+
+  .virgoSvg svg {
+    opacity: 0.5;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  0%   { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  50%  { 
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+  }
+  100% { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}
+@keyframes blink-animation {
+  0%   { opacity: 0; }
+  50%  { opacity: 1; }
+  100% { opacity: 0; }
 }

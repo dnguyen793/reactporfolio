@@ -4,21 +4,19 @@ import Toggler from "./home/Toggler";
 import {Link, useLocation} from "react-router-dom";
 import {Box} from "@mui/material";
 import {info} from "../info/Info";
+import initials from '../img/initial.png';
+import NightsStayIcon from '@mui/icons-material/NightsStay';
+import WbSunnyOutlinedIcon from '@mui/icons-material/WbSunnyOutlined';
+
 
 const links = [
     {
-        name: info.initials,
-        type: 'initials',
-        to: '/',
-        active: 'home'
-    },
-    {
-        name: 'About Me',
+        name: 'About',
         to: '/about',
         active: 'about'
     },
     {
-        name: 'Work Experience',
+        name: 'Experience',
         to: '/experience',
         active: 'home'
     }
@@ -33,6 +31,9 @@ export default function Navbar({darkMode, handleClick}) {
             <Box component={'ul'} display={'flex'} justifyContent={'center'} alignItems={'center'}
                  gap={{xs: '2rem', md: '8rem'}}
                  textTransform={'lowercase'} fontSize={'1rem'}>
+                <a href="/">
+                    <img src={initials} alt='Initials' width={35} height={35}></img>
+                </a>
                 {links.map((link, index) => (
                     <Box key={index} component={'li'} className={(link.active === active && !link.type) && Style.active}
                          sx={{borderImageSource: info.gradient}}>
